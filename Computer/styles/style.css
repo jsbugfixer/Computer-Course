@@ -1,0 +1,634 @@
+body {
+    background-color: #000;
+}
+
+.bg {
+    background-image: url("../images/bg.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 750px;
+}
+
+.header {
+    padding-top: 48px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.menu {
+    display: flex;
+}
+
+.list-item {
+    list-style-type: none;
+}
+
+.list-item__link {
+    margin-right: 56px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.list-item__link:hover {
+    font-size: 20px;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 30px;
+    transition: all 200ms ease;
+    background: linear-gradient(to right, #C89AFC, #7C6AFA);
+}
+
+.last-item {
+    margin-right: 0;
+}
+
+.header-btn>button {
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    background: linear-gradient(to right, #C89AFC, #7C6AFA);
+}
+
+.header-btn>button:hover {
+    background: linear-gradient(to right, #11998e, #38ef7d);
+    transition: all 200ms ease;
+}
+
+/* main */
+
+.main {
+    color: white;
+    padding-top: 198px;
+}
+
+.main-inner>h1 {
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 89.6px;
+    color: #FFFFFF;
+}
+
+.date-time {
+    display: flex;
+}
+
+.date-time>p {
+    margin-right: 30px;
+    width: 102px;
+    height: 112px;
+    text-align: center;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50.4px;
+    color: #FFFFFF;
+}
+
+.date-time>p>.color2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+
+/* section - order */
+
+.order {
+    background-color: #121212;
+    height: 130px;
+}
+
+.order-inner {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 36px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to right, #DF5950, #451046), #fff;
+    /* Комбинированный фон */
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: purple;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Для Firefox */
+input[type="range"]::-moz-range-progress {
+    background-color: #4CAF50;
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Для Firefox */
+input[type="range"]::-moz-range-track {
+    background: #fff;
+    /* Цвет фона (неактивный ползунок) */
+    height: 10px;
+    border-radius: 5px;
+}
+
+.btn-order_course>button {
+    width: 169px;
+    height: 44px;
+    border-radius: 50px;
+    background: linear-gradient(to right, #DF5950, #451046);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.btn-order_course>button:hover {
+    background: linear-gradient(to right, #fc00ff, #00dbde);
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.finish_course>p {
+    margin-bottom: 10px;
+    color: #686363;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.t1 {
+    margin-left: 100px;
+}
+
+.t2 {
+    margin-left: 30px;
+}
+
+.finish_course>p>.color1 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.rate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish_course {
+    margin-bottom: 8px;
+}
+
+.rate>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6f6b6b;
+}
+
+.income>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6f6b6b;
+}
+
+.income-student {
+    color: white;
+    margin-left: 30px;
+}
+
+/* section - service */
+
+.service {
+    padding-top: 200px;
+}
+
+.service-wrapper {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service-left img {
+    border: 30px solid;
+    border-image-source: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+    border-image-slice: 1;
+    /* или другое значение, чтобы определить, как резать изображение */
+    border-image-width: 1;
+    /* Ширина изображения */
+    border-image-outset: 0;
+    /* Сдвиг рамки за пределы элемента, если нужно */
+    border-image-repeat: stretch;
+    /* Растягивание изображения на всю рамку */
+}
+
+.service-right>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.service-right>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #FFFFFF;
+}
+
+/* start */
+
+.start {
+    padding-top: 200px;
+    color: white;
+}
+
+.loading-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 49px;
+}
+
+.loading-block>img {
+    margin-right: 20px;
+}
+
+.loading-block>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    color: #FFFFFF;
+}
+
+.start-description {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-bottom: 80px;
+}
+
+.start-rating {
+    display: flex;
+}
+
+.start-rating>p {
+    margin-right: 200px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50.4px;
+    color: #FFFFFF;
+}
+
+.start-description2 {
+    display: flex;
+}
+
+.start-description2>p {
+    margin-right: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+/* profession */
+
+.profession {
+    padding-top: 120px;
+}
+
+.profession-wrapper>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    margin-bottom: 120px;
+}
+
+.profession-cards {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.profession-card>img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
+.profession-card>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33.6px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.profession-card>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-align: center;
+    opacity: 0.8;
+    color: white;
+}
+
+.partners {
+    padding-top: 231px;
+}
+
+.partners-title {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.partners-title>img {
+    margin-right: 40px;
+}
+
+.partners-title>h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    color: #FFFFFF;
+}
+
+/* study */
+
+.study {
+    color: white;
+    padding-top: 245px;
+}
+
+.study-inner>img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.study-inner>h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    color: #FFFFFF;
+}
+
+.study-inner>p {
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    opacity: 0.5;
+}
+
+.line-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.week-line>img {
+    display: block;
+    margin: 0 auto;
+}
+
+.week>p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28.8px;
+    text-align: right;
+    color: white;
+    margin-bottom: 90px;
+    padding-left: 250px;
+    margin-top: 20px;
+}
+
+.week>span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22.4px;
+    text-align: right;
+    color: white;
+    opacity: 0.5;
+    padding-left: 450px;
+}
+
+.week1>p {
+    text-align: left;
+    position: relative;
+    right: 250px;
+}
+
+.week1>span {
+    position: relative;
+    right: 450px;
+}
+
+/* teachers */
+
+.teachers {
+    padding-top: 231px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.teachers-loading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 113px;
+}
+
+.teachers-loading>img {
+    margin-right: 37px;
+}
+
+.teachers-loading>h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+}
+
+.teachers-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.teacher>img {
+    margin-bottom: 40px;
+}
+
+.teacher {
+    text-align: center;
+}
+
+.teacher>h2 {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.teacher>p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.teacher>button {
+    padding: 10px 30px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    background: none;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.teacher>button:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    padding-top: 200px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-inner > h2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67.2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.footer-inner > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.6px;
+    text-align: center;
+    opacity: 0.5;
+    margin-bottom: 60px;
+}
+
+.f-inp-btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.f-inp-btn > input {
+    width: 353px;
+    height: 44px;
+    background-color: rgb(56, 53, 53);
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+    border: none;
+    color: white; /* Добавьте цвет текста */
+}
+
+.f-inp-btn > input::placeholder {
+    color: rgb(209, 204, 204);
+    opacity: 1; /* Убедитесь, что плейсхолдер видимый */
+}
+
+
+.f-inp-btn > button {
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    background: linear-gradient(to right, #DF5950, #451046);
+}
+
+.social-network {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.social-network > img {
+    margin-right: 30px;
+}
